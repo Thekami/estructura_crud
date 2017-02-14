@@ -34,6 +34,9 @@
 						<option value="0">INACTIVOS</option>
 					</select>
 				</div>
+				<div class="col-xs-4 form-group">
+					<input type="text" class="form-control" id="txt_busqueda" placeholder="busqueda...">
+				</div>
 			</div>
 			<div id="tableContainer" class="table-responsive row">
 

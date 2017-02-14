@@ -17,6 +17,7 @@
 
 			if(!$this->dbCon)
 				echo $this->show_error();
+		
 		}
 
 		public function query($consult){
@@ -35,6 +36,7 @@
 		private function show_error(){
 			return $this->dbCon->connect_error;
 		}
+
 
 		public function query_assoc($consult){
 			$vec = array();

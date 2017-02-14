@@ -40,6 +40,7 @@ function loadData(){
 			}
 		}
 	});
+
 }
 
 function editPersona(id){
@@ -54,6 +55,35 @@ $(document).on('change', '#select_status', function(e){
 	loadData();
 });
 
-$(document).on('click', '#btn_new', function(e){
-	
+
+$(document).on('keyup', '#txt_busqueda', function(e){
+	$.ajax({
+		url:'routes/routePersonas.php',
+		type:'POST',
+		async: false,
+		data: {info: $(this).val(), action: "busqueda"},
+		dataType:'JSON',
+		beforeSend: function(){
+			// showSpinner();
+		},
+		error: function(error){
+			console.log(error);
+			toast1("Error!", error, 8000, "error");
+			// removeSpinner();
+		},
+		success: function(data){
+			console.log(data);
+			// removeSpinner();
+
+			if(data != ""){
+				var headers = ["NO.", "NOMBRE", "DIRECCION", "TELEFONO", "ESTATUS", "OPCIONES"];
+				jQueryTable("tableContainer", headers, data, 8, "450px", "Persona");
+			  //jQueryTable(id_container, headers, data, LimitRow, maxHeight, NameFunc);
+			}
+			else{
+				$('tbody').empty();
+				toast1("Atencion!", "No hay clientes para mostrar", 8000, "error");
+			}
+		}
+	});
 });

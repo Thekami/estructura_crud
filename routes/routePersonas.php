@@ -1,6 +1,6 @@
 <?php  
 	
-	session_start();
+	// session_start();
 
 	require('../clases/Persona.class.php');
 
@@ -14,6 +14,9 @@
 	switch ($action) {
 		case 'read':
 			echo json_encode($Persona->read($info));
+			break;
+		case 'busqueda':
+			echo json_encode($Persona->busqueda($info));
 			break;
 	}
 	
