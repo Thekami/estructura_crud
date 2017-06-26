@@ -1,16 +1,18 @@
 $(document).ready(function(){
 
 	loadData();
+
+	toast1("Error!", error, 8000, "error");
 })
 
 var error = "Ocurrió un error insesperado en el sitio, por favor intentelo mas tarde o pongase en contacto con su administrador.";
 var success = "La accion se ralizó con exito";
 var datosIncorrectos = "Datos incorrectos, vuelve a intentarlo.";
 
-
 function loadData(){
 
 	var filtro = $('#select_status').val();
+	console.log($('#txt_busqueda').val());
 
 	$.ajax({
 		url:'routes/routePersonas.php',

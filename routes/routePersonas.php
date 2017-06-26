@@ -18,6 +18,7 @@
 		case 'busqueda':
 			echo json_encode($Persona->busqueda($info));
 			break;
+		
 	}
 	
 ?>
