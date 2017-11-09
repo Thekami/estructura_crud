@@ -1,8 +1,10 @@
 $(document).ready(function(){
 
+	// alert();
+
 	loadData();
 
-	toast1("Error!", error, 8000, "error");
+	// toast1("asdasdasd!", error, 8000, "success");
 })
 
 var error = "Ocurrió un error insesperado en el sitio, por favor intentelo mas tarde o pongase en contacto con su administrador.";
@@ -12,7 +14,7 @@ var datosIncorrectos = "Datos incorrectos, vuelve a intentarlo.";
 function loadData(){
 
 	var filtro = $('#select_status').val();
-	console.log($('#txt_busqueda').val());
+	// console.log($('#select_status').val());
 
 	$.ajax({
 		url:'routes/routePersonas.php',
