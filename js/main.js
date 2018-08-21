@@ -103,8 +103,8 @@ var error = "Ocurrió un error insesperado en el sitio, por favor intentelo mas 
 			var caracteres = $(this).val();									
 																			
 			if (caracteres.length > length){			
-				// toast1("Error!", "No se pueden agregar mas de "+length+" caracteres", 4000, "error");							
-				toast('danger','Error',"No se pueden agregar mas de "+length+" caracteres", 8000);	
+				toast1("Error!", "No se pueden agregar mas de "+length+" caracteres", 4000, "error");							
+				// toast('danger','Error',"No se pueden agregar mas de "+length+" caracteres", 8000);	
 				$(this).val(contenido);
 			}else{								
 				contenido = $(this).val();
@@ -123,8 +123,8 @@ var error = "Ocurrió un error insesperado en el sitio, por favor intentelo mas 
 			var caracteres = $(this).val();									
 																			
 			if (caracteres.match(/[^1234567890]/g) ){
-				// toast1("Error!", "Solo se admiten numeros", 4000, "error");	
-				toast('danger','Error',"Solo se admiten numeros", 4000);
+				toast1("Error!", "Solo se admiten numeros", 4000, "error");	
+				// toast('danger','Error',"Solo se admiten numeros", 4000);
 				
 				$(this).val(contenido);
 			}else{								
@@ -145,8 +145,8 @@ var error = "Ocurrió un error insesperado en el sitio, por favor intentelo mas 
 			var caracteres = $(this).val();									
 																			
 			if (caracteres > val){	
-				// toast1("Error!", "No se puede ingresar un valor tan grande, intente con uno mas pequeño", 4000, "error");								
-				toast('danger','Error',"No se puede ingresar un valor tan grande, intente con uno mas pequeño", 8000)	
+				toast1("Error!", "No se puede ingresar un valor tan grande, intente con uno mas pequeño", 4000, "error");								
+				// toast('danger','Error',"No se puede ingresar un valor tan grande, intente con uno mas pequeño", 8000)	
 				$(this).val(contenido);
 			}else{								
 				contenido = $(this).val();
