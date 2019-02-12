@@ -42,6 +42,7 @@
 
 				<table class="table table-striped table-bordered">
 					<thead id="thead">
+						
 					</thead>
 					<tbody id="tbody">
 					</tbody>
@@ -60,5 +61,6 @@
 	<script src="js/jQueryTables.js"></script>
 	<script src="js/spinner.js"></script>
 	<script src="js/index.js"></script>
+
 </body>
 </html>

@@ -92,4 +92,4 @@ $(document).on('keyup', '#txt_busqueda', function(e){
 	});
 });
 
-validaOnlyNumbers('txt_busqueda');
+// validaOnlyNumbers('txt_busqueda');

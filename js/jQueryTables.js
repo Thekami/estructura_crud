@@ -9,6 +9,7 @@ function jQueryTable(id_container, headers, data, LimitRow, maxHeight, NameFunc)
 	}
 	thead += '</tr>'
 
+
 	$('#thead').empty()
 	$('#thead').append(thead)
 
